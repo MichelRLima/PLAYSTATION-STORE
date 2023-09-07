@@ -1,13 +1,10 @@
 <div class="menu-bar__container">
 	<div class="menu-bar__logo">
-		<img
-			src="assets/ps-logo.png"
-			alt="playstation logo"
-			srcset=""
-			width="140px"
-			height="32px"
-		>
+		<img src="assets/ps-logo.png" alt="playstation logo" srcset="" width="140px" height="32px">
+
 	</div>
+
+
 	<div class="menu-bar__item">
 		<ul>
 			<li><a href="#">YOUTUBE</a></li>
@@ -15,4 +12,21 @@
 			<li><a href="#">GITHUB</a></li>
 		</ul>
 	</div>
+
+	<div class="menu-bar__mobile">
+		<img (click)="toggleMenu()" src="../../../assets/bar.png" alt="">
+
+
+	</div>
+
+
+
+</div>
+
+<div class="menu-bar__item-mobile" [ngClass]="{'menu-aberto': menuAberto, 'menu-fechado': !menuAberto}">
+	<ul>
+		<li><a href="#">YOUTUBE</a></li>
+		<li><a href="#">LINKEDIN</a></li>
+		<li><a href="#">GITHUB</a></li>
+	</ul>
 </div>
